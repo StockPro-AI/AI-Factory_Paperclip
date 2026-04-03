@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Block manual lockfile edits
-                                if: >-
+                        if: >-
           github.head_ref != 'chore/refresh-lockfile' &&
           !startsWith(github.head_ref, 'dependabot/')
         run: |
